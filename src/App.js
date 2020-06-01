@@ -1,9 +1,9 @@
 import React, {Component, Fragment} from 'react';
 import {BrowserRouter as Router, Route, Switch}  from 'react-router-dom'
-import Login from './login'
-import logo from './logo.svg';
+import Login from './pages/login'
+
 import './App.css';
-import Register from './register';
+import Register from './pages/register';
 
 class App extends Component {
 

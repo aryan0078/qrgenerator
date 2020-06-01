@@ -1,0 +1,47 @@
+#main-holder-l{
+   
+   display: flex;
+    background-color: black;
+   justify-content: center;
+   align-items: center;
+    width:100%;
+    height: 100vh;
+}
+#login-holder-l{
+    min-height: 60%;
+background-color: #121212;
+max-height: 35%;
+display: flex;
+text-align: center;
+
+min-width: 30%;
+max-width: 90%;
+font-size: 30px;
+border-radius: 10px;
+align-items: center;
+justify-content: center;
+}
+#form-l{
+    width: 80%;
+    text-align: center;
+    align-self: center;
+    height: 75%;
+ 
+    font-size: medium;
+    color: white;
+}
+#submitbutton-l{
+    background-color: black;
+    border-color: brown;
+}
+#exampleInputPassword1-l{
+    background-color: black;
+    color: white;
+}
+#exampleInputEmail1-l{
+    background-color: black;
+    color: white;
+}
+#submitbutton{
+    margin-top: 10px;
+}
