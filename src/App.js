@@ -13,6 +13,7 @@ class App extends Component {
         <Router>
           <Fragment>
             <Switch>
+            <Route exact path='/' component={Login}/>
               <Route exact path='/login' component={Login}/>
               <Route exact path='/signup' component={Register}/>
             </Switch>
