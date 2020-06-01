@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'monsterrat';
+    src: url('../../pages/assets/fonts/Montserrat-Regular.ttf')
+  }
+
+#brandname{
+    color:white;
+    font-family: monsterrat;
+    
+}

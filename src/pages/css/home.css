@@ -1,0 +1,18 @@
+#homeqrgen{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    border-color: red;
+    display: flex;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+#homemaincontainer{
+   
+    
+ 
+}
