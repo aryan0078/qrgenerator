@@ -8,7 +8,7 @@ export class auth{
             method:"POST",
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded",
-                // "Content-Type": "multipart/form-data",
+                      
             },
             body:"email=test&password=1a2b3c4d"
         })
