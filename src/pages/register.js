@@ -19,8 +19,9 @@ async register(){
             },
               body:"email="+this.state.email+"&password="+this.state.password+"&region="+this.state.region+"&language="+this.state.language+"&firstname="+this.state.firstname+"&lastname="+this.state.lastname
           })
+          var data=await res.json()
           if(data.msg==undefined){localStorage.setItem('email',this.state.email);localStorage.setItem('name',this.state.name);this.setState({loading:false,redirect:true})}
-        else{alert(data.msg)
+        else{alert(data.msg);
           this.setState({loading:false})}
           
   }
