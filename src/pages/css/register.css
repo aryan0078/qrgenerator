@@ -38,12 +38,18 @@
     font-size: medium;
     color: white;
 }
- @media all and (max-width:650px){
+ @media all and (max-width:720px) {
      #login-holder{
          width: 90%;
-         height: 70%;
+         height: 90%;
      }
  }
+ @media all and (max-height:300px) {
+    #login-holder{
+        width: 90%;
+        height: 90%;
+    }
+}
 #example-r{
     width: auto;
     height: auto;
