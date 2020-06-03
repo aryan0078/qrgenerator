@@ -10,7 +10,7 @@ export default class Home extends Component {
     }
 
     async getqr(){
-      var res=await fetch('http://localhost:8000/gen/',{
+      var res=await fetch('https://qrgenback.herokuapp.com/gen/',{
         method:"POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
