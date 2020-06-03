@@ -23,7 +23,7 @@ async login(){
         })
 
         var data =await res.json()
-        if(data.msg==undefined){localStorage.setItem('email');localStorage.setItem('name');this.setState({loading:false,redirect:true})}
+        if(data.msg==undefined){localStorage.setItem('email',this.state.email);localStorage.setItem('name',this.state.name);this.setState({loading:false,redirect:true})}
         else{alert(data.msg)
           this.setState({loading:false})}
         
