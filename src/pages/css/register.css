@@ -1,3 +1,8 @@
+#dropdownMenuButton{
+    background-color: black;
+    color: white;
+}
+
 #main-holder{
    
     display: flex;
@@ -8,32 +13,62 @@
      height: 100vh;
  }
  #login-holder{
-    min-height: 60%;
+  
     background-color: #121212;
-    max-height: 35%;
+ 
     display: flex;
     text-align: center;
-    
-    min-width: 30%;
-    max-width: 110%;
+    width: 35%;
+    height: 80%;
     font-size: 30px;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
  }
  #form{
-     width: 80%;
-     text-align: center;
-     align-self: center;
-     height: 75%;
-     
-     font-size: medium;
-     color: white;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+   
+    font-size: medium;
+    color: white;
+}
+ @media all and (max-width:650px){
+     #login-holder{
+         width: 90%;
+         height: 70%;
+     }
  }
+#example-r{
+    width: auto;
+    height: auto;
+    background-color: black;
+    color: white;
+}
+#dropitem:hover{
+    background-color: #121212;
+    color: white;
+}
+#dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
  #submitbutton{
      background-color: black;
      border-color: brown;
+    
  }
+ #submitbutton:hover{
+    background-color: red;
+    border-color: brown;
+   
+}
  #exampleInputPhone1-r{
      background-color: black;
      color: white;
@@ -46,3 +81,6 @@
     background-color: black;
     color: white;
  }
+#dropdownMenuButton{
+    align-self: center;
+}

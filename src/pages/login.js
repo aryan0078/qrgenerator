@@ -12,7 +12,11 @@ constructor(props){
 async login(){
   var res=await fetch('http://grgenback.herokuapp.com/userauth/login/',{
             method:"POST",
-            body:"email=test&password=1a2b3c4d"
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+                    
+          },
+            body:"email=test@gmail.com&password=1a2b3c4d"
         })
         var data =await res.json()
         console.log(data)
