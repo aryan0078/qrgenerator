@@ -1,0 +1,49 @@
+#qrcard{
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  text-align: center;
+    border-radius: 15px;
+    border-width: 0px;
+    background-color: whitesmoke;
+}
+@media all and (max-width:720px) {
+    #qrcard{
+        align-self: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  text-align: center;
+    border-radius: 15px;
+    border-width: 0px;
+    background-color: whitesmoke;
+        flex: 0.9;
+        flex-direction: column;
+    }
+}
+#cardcontainer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    background-color: #121212;
+    
+}
+#genbtn{
+background-color: tomato;
+    margin-top: 10px;
+    border-color: tomato;
+}
+#urlinput{
+    text-align: center;
+    font-size: 15px;
+    border-width: 0px;
+    height: 30px;
+    border-radius: 8px;
+    border-width: 0.8px;
+    border-color: grey;
+    border-style: solid;
+    background-color: white
+    
+}

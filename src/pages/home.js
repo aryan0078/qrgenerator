@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../components/header'
 import {Link, Redirect}  from 'react-router-dom'
 import ImageLoader from 'react-image-file';
+import './css/home.css'
 export default class Home extends Component {
     constructor(props){
         super(props)
@@ -29,13 +30,19 @@ export default class Home extends Component {
     return (
         <>
         <Header right={<button class="btn btn-primary" id="submitbutton" onClick={()=>this.setState({logout:true})}>Logout</button>}/>
-      <div>
-        <input placeholder="Enter your url here" value={this.state.url} onChange={(e)=>this.setState({url:e.target.value})}></input>
-        <button type="button" class="btn btn-primary" onClick={this.getqr}>Generate</button>
-        <img src={this.state.qr}/> 
+      <div id="cardcontainer">
        
+      <div class="card" style={{width:"18rem"}} id="qrcard">
+      <img class="card-img-top" src={this.state.qr} alt=""/> 
+  
+  <div class="card-body">
+  <input id="urlinput" placeholder="Enter your url here" value={this.state.url} onChange={(e)=>this.setState({url:e.target.value})}></input>
+<button type="button" class="btn btn-primary" onClick={this.getqr} id="genbtn">Generate</button>
+  </div>
+</div>
       </div>
     </>);
   }
 }
+
 
